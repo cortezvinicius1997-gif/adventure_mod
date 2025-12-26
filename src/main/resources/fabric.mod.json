@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "adventuremod",
+  "version": "${version}",
+  "name": "Adventure Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/adventuremod/icon.png",
+  "environment": "*",
+  "accessWidener": "adventuremod.accesswidener",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.cortez.adventuremod.client.AdventureModDataGenerator"
+    ],
+    "client": [
+      "com.cortez.adventuremod.client.AdventureModClient"
+    ],
+    "main": [
+      "com.cortez.adventuremod.AdventureMod"
+    ]
+  },
+  "mixins": [
+    "adventure_mod.mixins.json",
+    {
+      "config": "adventure_mod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "suggests": {
+    "adventure_seasons": "*"
+  }
+}

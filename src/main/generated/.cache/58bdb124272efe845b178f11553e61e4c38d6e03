@@ -1,0 +1,6 @@
+// 1.21.1	2025-12-19T22:08:51.6024581	Adventure Mod/Tags for minecraft:block
+3746f39ccce2720afa382314670acd58c16a58cf data\adventuremod\tags\block\ore_detector_blocks.json
+a9acfe37489eab57d53404f7a0889f2288b4adff data\minecraft\tags\block\needs_iron_tool.json
+034022a43c17795fbcbe5d60ebd667af741ac77b data\minecraft\tags\block\mineable\pickaxe.json
+976ce72a88e7762f710e819ce097ebe88039aaf3 data\minecraft\tags\block\needs_stone_tool.json
+9d9b9d4e896e0897dd50ae184512e7a011ed5e4b data\adventuremod\tags\block\axe_wood_cutter_blocks.json

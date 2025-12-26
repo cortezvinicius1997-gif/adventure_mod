@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "adventuremod:block/pedestal_block"
+    }
+  }
+}

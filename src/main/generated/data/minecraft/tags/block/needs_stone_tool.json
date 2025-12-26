@@ -1,0 +1,10 @@
+{
+  "values": [
+    "adventuremod:nether_iron_ore",
+    "adventuremod:end_iron_ore",
+    "adventuremod:nether_copper_ore",
+    "adventuremod:end_copper_ore",
+    "adventuremod:nether_lapislazuli_ore",
+    "adventuremod:end_lapislazuli_ore"
+  ]
+}

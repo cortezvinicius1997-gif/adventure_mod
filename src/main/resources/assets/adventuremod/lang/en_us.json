@@ -1,0 +1,42 @@
+{
+  "itemgroup.adventure_mod": "Adventure Mod",
+
+  "item.adventuremod.mini_computer": "Mini Computer",
+
+  "item.adventuremod.ore_detector.no_valuables": "Ore not found.",
+  "item.adventuremod.ore_detector": "Ore Detector",
+  "item.adventuremod.ore_detector_generic": "Ore Detector Generic",
+  "item.adventuremod.magic_fruit": "Magic Fruit",
+
+  "block.adventuremod.pedestal_block": "Pedestal",
+  "block.adventuremod.programming_block": "Programmer",
+  "block.adventuremod.programming_block.screen.program_btn": "Program",
+  "block.adventuremod.programming_block.screen.confirm_btn": "Confirm",
+  "block.adventuremod.programming_block.screen.back_btn": "Back",
+  "block.adventuremod.programming_block.screen.config_label": "Configure Program",
+  "block.adventuremod.programming_block.screen.input_name_placeholder": "Program name (Optional)",
+  "block.adventuremod.programming_block.screen.input_description_placeholder": "Description (optional)",
+
+  "block.adventuremod.nether_coal_ore": "Nether Coal Ore",
+  "block.adventuremod.end_coal_ore": "End Coal Ore",
+  "block.adventuremod.nether_iron_ore": "Nether Iron Ore",
+  "block.adventuremod.end_iron_ore": "End Iron Ore",
+  "block.adventuremod.nether_copper_ore": "Nether Copper Ore",
+  "block.adventuremod.end_copper_ore": "End Copper Ore",
+  "block.adventuremod.end_gold_ore": "End Gold Ore",
+  "block.adventuremod.nether_redstone_ore": "Nether Redstone Ore",
+  "block.adventuremod.end_redstone_ore": "End Redstone Ore",
+  "block.adventuremod.nether_lapislazuli_ore": "Nether Lapis Lazuli Ore",
+  "block.adventuremod.end_lapislazuli_ore": "End Lapis Lazuli Ore",
+  "block.adventuremod.nether_diamond_ore": "Nether Diamond Ore",
+  "block.adventuremod.end_diamond_ore": "End Diamond Ore",
+  "block.adventuremod.nether_emerald_ore": "Nether Emerald Ore",
+  "block.adventuremod.end_emerald_ore": "End Emerald Ore",
+
+  "effect.adventuremod.montain_sickness": "Montain Sickness",
+  "effect.adventuremod.pulmonary_edema": "Pulmonary Edema",
+  "effect.adventuremod.cerebral_edema": "Cerebral Edema",
+
+  "tag.block.adventuremod.ore_detector_blocks": "Detectable Ores",
+  "tag.block.adventuremod.axe_wood_cutter_blocks": "Wood Cutter Blocks"
+}

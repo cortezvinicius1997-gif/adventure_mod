@@ -1,0 +1,44 @@
+{
+  "itemgroup.adventure_mod": "Adventure Mod",
+
+  "item.adventuremod.ore_detector.no_valuables": "Minério não encontrado.",
+  "item.adventuremod.ore_detector": "Detector de Minério",
+  "item.adventuremod.ore_detector_generic": "Detector de Minério Genérico",
+  "item.adventuremod.magic_fruit": "Fruta Mágica",
+
+  "item.adventuremod.mini_computer": "Mini Computador",
+
+  "block.adventuremod.pedestal_block": "Pedestal",
+
+  "block.adventuremod.programming_block": "Programadora",
+  "block.adventuremod.programming_block.screen.program_btn": "Programar",
+  "block.adventuremod.programming_block.screen.confirm_btn": "Confirmar",
+  "block.adventuremod.programming_block.screen.back_btn": "Voltar",
+  "block.adventuremod.programming_block.screen.config_label": "Configurar Programa",
+  "block.adventuremod.programming_block.screen.input_name_placeholder": "Nome do Programa (Opcional)",
+  "block.adventuremod.programming_block.screen.input_description_placeholder": "Descrição (opcional)",
+
+  "block.adventuremod.nether_coal_ore": "Minério de Carvão do Nether",
+  "block.adventuremod.end_coal_ore": "Minério de Carvão do Fim",
+  "block.adventuremod.nether_iron_ore": "Minério de Ferro do Nether",
+  "block.adventuremod.end_iron_ore": "Minério de Ferro do Fim",
+  "block.adventuremod.nether_copper_ore": "Minério de Cobre do Nether",
+  "block.adventuremod.end_copper_ore": "Minério de Cobre do Fim",
+  "block.adventuremod.end_gold_ore": "Minério de Ouro do Fim",
+  "block.adventuremod.nether_redstone_ore": "Minério de Redstone do Nether",
+  "block.adventuremod.end_redstone_ore": "Minério de Redstone do Fim",
+  "block.adventuremod.nether_lapislazuli_ore": "Minério de Lápis-lazúli do Nether",
+  "block.adventuremod.end_lapislazuli_ore": "Minério de Lápis-lazúli do Fim",
+  "block.adventuremod.nether_diamond_ore": "Minério de Diamante do Nether",
+  "block.adventuremod.end_diamond_ore": "Minério de Diamante do Fim",
+  "block.adventuremod.nether_emerald_ore": "Minério de Esmeralda do Nether",
+  "block.adventuremod.end_emerald_ore": "Minério de Esmeralda do Fim",
+
+
+  "effect.adventuremod.montain_sickness": "Mal da Montanha",
+  "effect.adventuremod.pulmonary_edema": "Edema Pulmonar",
+  "effect.adventuremod.cerebral_edema": "Edema Cerebral",
+
+  "tag.block.adventuremod.ore_detector_blocks": "Minérios Detectáveis",
+  "tag.block.adventuremod.axe_wood_cutter_blocks": "Blocos Cortáveis com Machado"
+}

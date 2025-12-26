@@ -1,0 +1,19 @@
+{
+  "values": [
+    "adventuremod:nether_coal_ore",
+    "adventuremod:end_coal_ore",
+    "adventuremod:nether_iron_ore",
+    "adventuremod:end_iron_ore",
+    "adventuremod:nether_copper_ore",
+    "adventuremod:end_copper_ore",
+    "adventuremod:end_gold_ore",
+    "adventuremod:nether_redstone_ore",
+    "adventuremod:end_redstone_ore",
+    "adventuremod:nether_lapislazuli_ore",
+    "adventuremod:end_lapislazuli_ore",
+    "adventuremod:nether_diamond_ore",
+    "adventuremod:end_diamond_ore",
+    "adventuremod:nether_emerald_ore",
+    "adventuremod:end_emerald_ore"
+  ]
+}
