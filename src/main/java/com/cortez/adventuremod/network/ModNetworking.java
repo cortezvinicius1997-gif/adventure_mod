@@ -29,5 +29,10 @@ public class ModNetworking {
                 ThirstSyncPayload.CODEC
         );
 
+        // Registra o payload de sincronização do calendário
+        PayloadTypeRegistry.playS2C().register(
+                CalendarSyncPayload.ID,
+                CalendarSyncPayload.CODEC
+        );
     }
 }

@@ -1,5 +1,7 @@
 package com.cortez.adventuremod.client.network;
 
+import com.cortez.adventuremod.client.calendar.ClientCalendarData;
+import com.cortez.adventuremod.network.CalendarSyncPayload;
 import com.cortez.adventuremod.network.ThirstSyncPayload;
 import com.cortez.adventuremod.util.IEntityDataSaver;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
@@ -21,6 +23,16 @@ public class ModNetworkingClient {
                             data.getPersistentData().putFloat("thirst_saturation", payload.saturation());
                             data.getPersistentData().putFloat("thirst_exhaustion", payload.exhaustion());
                         }
+                    });
+                }
+        );
+
+        // Receiver para sincronização do calendário
+        ClientPlayNetworking.registerGlobalReceiver(
+                CalendarSyncPayload.ID,
+                (payload, context) -> {
+                    context.client().execute(() -> {
+                        ClientCalendarData.update(payload);
                     });
                 }
         );

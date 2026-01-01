@@ -1,9 +1,10 @@
 package com.cortez.adventuremod.event;
 
-import com.cortez.adventure_seasons.lib.AdventureSeason;
 import com.cortez.adventuremod.AdventureMod;
+import com.cortez.adventuremod.calendar.CalendarDate;
 import com.cortez.adventuremod.config.AdventureConfig;
 import com.cortez.adventuremod.effect.ModEffects;
+import com.cortez.adventuremod.network.CalendarSyncPayload;
 import com.cortez.adventuremod.network.ThirstSyncPayload;
 import com.cortez.adventuremod.seasons.ISeasonHandler;
 import com.cortez.adventuremod.util.GetNBTData;
@@ -19,6 +20,8 @@ import net.minecraft.util.math.BlockPos;
 public class PlayerTickHandler implements ServerTickEvents.StartTick {
 
     private final ISeasonHandler seasonHandler;
+    private int calendarSyncTicks = 0;
+    private static final int CALENDAR_SYNC_INTERVAL = 100; // Sincroniza a cada 5 segundos
 
 
     public PlayerTickHandler(ISeasonHandler seasonHandler) {
@@ -29,6 +32,7 @@ public class PlayerTickHandler implements ServerTickEvents.StartTick {
     @Override
     public void onStartTick(MinecraftServer server) {
         initSeason(server);
+        syncCalendarToClients(server);
         for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
             if (!player.isFallFlying()){
                 if (!player.isCreative()) {
@@ -47,6 +51,26 @@ public class PlayerTickHandler implements ServerTickEvents.StartTick {
     private void initSeason(MinecraftServer server)
     {
         seasonHandler.tick(server);
+    }
+
+    private void syncCalendarToClients(MinecraftServer server) {
+        calendarSyncTicks++;
+        if (calendarSyncTicks >= CALENDAR_SYNC_INTERVAL) {
+            calendarSyncTicks = 0;
+
+            CalendarDate date = seasonHandler.getCurrentDate();
+            CalendarSyncPayload payload = new CalendarSyncPayload(
+                date.getYear(),
+                date.getDayOfYear(),
+                date.getHour(),
+                date.getMinute(),
+                date.getSeason().getIndex()
+            );
+
+            for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
+                ServerPlayNetworking.send(player, payload);
+            }
+        }
     }
 
     private void altitudeMonit(ServerPlayerEntity player){

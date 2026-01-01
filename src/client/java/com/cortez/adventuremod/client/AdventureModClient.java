@@ -2,6 +2,7 @@ package com.cortez.adventuremod.client;
 
 import com.cortez.adventuremod.block.entity.ModBlockEntities;
 import com.cortez.adventuremod.client.block.entity.renderer.PedestalBlockEntityRenderer;
+import com.cortez.adventuremod.client.hud.CalendarHudOverlay;
 import com.cortez.adventuremod.client.hud.ThirstHudOverlay;
 import com.cortez.adventuremod.client.network.ModNetworkingClient;
 import com.cortez.adventuremod.client.screen.custom.PedestalScreen;
@@ -19,6 +20,7 @@ public class AdventureModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HudRenderCallback.EVENT.register(new ThirstHudOverlay());
+        HudRenderCallback.EVENT.register(new CalendarHudOverlay());
 
 
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);

@@ -72,6 +72,16 @@ public class AdventureConfig {
         return data != null && data.altitudeEffect;
     }
 
+    public static boolean isCalendarEnabled(){
+        return data != null && data.calendarEnabled;
+    }
 
+    public static boolean isCalendarHudEnabled(){
+        return data != null && data.calendarHudEnabled;
+    }
+
+    public static int getDaysPerSeason(){
+        return data != null ? data.daysPerSeason : 28;
+    }
 
 }

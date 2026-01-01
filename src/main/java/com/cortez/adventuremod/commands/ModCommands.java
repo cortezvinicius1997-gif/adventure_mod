@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 public class ModCommands
 {
     public static void registerCommand(){
-
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+            CalendarCommands.register(dispatcher);
+        });
     }
 }
